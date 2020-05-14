@@ -1,14 +1,14 @@
 $(function() {
 
-	$('#chart').highcharts({
+	$('#chart2').highcharts({
 		title : {
-			text : '제목',
+			text : 'CPU 이용률',
 			x : -20
 		// center
 		},
 
 		subtitle : {
-			text : '부제목',
+			text : 'UsageAgent',
 			x : -20
 		},
 
@@ -18,7 +18,7 @@ $(function() {
 
 		yAxis : { // y축
 			title : {
-				text : '단위 (°C)'
+				text : '이용률(%)'
 			},
 
 			plotLines : [ { // 선
@@ -29,7 +29,7 @@ $(function() {
 		},
 
 		tooltip : {
-			valueSuffix : '°Cas'
+			valueSuffix : '%'
 		},
 
 		legend : { // 범례
@@ -44,13 +44,13 @@ $(function() {
 			data : [ 7.0, 6.9, 9.5, 14.5, 18.2, 21.5 ]
 		}, {
 			name : 'New York',
-			data : [ -0.2, 0.8, 5.7, 11.3, 17.0, 22.0 ]
+			data : [ 0, 0.8, 5.7, 11.3, 17.0, 22.0 ]
 		}, {
 			name : 'New York2',
 			data : [ 1, 2, 7, 3, 4, 10 ]
 		}, {
 			name : 'Berlin',
-			data : [ -0.9, 0.6, 3.5, 8.4, 13.5, 17.0 ]
+			data : [ 3, 0.6, 3.5, 8.4, 13.5, 52.0 ]
 		}, {
 			name : 'London',
 			data : [ 3.9, 4.2, 5.7, 8.5, 11.9, 15.2 ]
